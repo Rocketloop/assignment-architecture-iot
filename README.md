@@ -8,7 +8,7 @@ Whether you have been sent this assignment in response to an interview with us o
 
 In this assignment, you are tasked with developing a scalable, maintainable, and secure software architecture for an IoT product.
 
-### Prodcut Description
+### Product Description
 
 A home security monitoring system that uses different sensors and AI to detect break-ins and other emergencies in customer homes. There is a central dispatch center with employees that are responsible to monitor customer homes. When an emergency is detected in a home, the dispatcher should receive an alert in their monitoring dashboard in order to call emergency services (e.g. police or fire rescue). The sensors in each customer's home can include motion sensors, sound sensors, CO2 sensors, and door/window sensors. The individual sensors do not have an internet connection, so sensor data should be aggregated locally on a provided gateway/bridge (hardware similar to a raspberry pi) that then sends the sensor data to the cloud to be processed. We need to store all sensor data persistently for future use as training data for machine learning models. In addition, sensor data for each home must be analyzed in real-time by multiple ML models in order to detect emergencies. Each ML model takes a significant amount of time to be loaded into memory and might need specific hardware (GPUs). We are expecting roughly 10 sensors per home. Each sensor produces a reading every minute (roughly 10KB of data). The system should be able to scale to at least 1,000,000 homes.
 Customers should have access to an app that shows them the status of their home, i.e. what sensors are installed, their status, and if the system is operational, from their mobile phone.
